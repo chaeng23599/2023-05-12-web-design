@@ -93,6 +93,7 @@ body{
 .slider img{}
 
 /*contents */
+
 .contents{
     height: 200px;
     width: 100%;
@@ -124,23 +125,30 @@ body{
 }
 
 .tab_title h2{
-    padding: 10px 0;
+    height: 50px;
+    line-height: 50px;
+    background-color: #eee;
+    text-align: center;
+    font-size: 14px;
+    font-weight: normal;
+    width: 100%;
+}
+
+.tab_title h2 a {
+    display: block;
 }
 
 .tab_title h2.on {
     background-color: tomato;
     color: #fff;
 }
-.tab_title a{
-    font-size: 14px;
-    font-weight: normal;
-    background-color: #eee;
-   padding: 16px 70px ;
+
+.tab_contents{
+
 }
-
-
 .notice{
     padding: 10px 0;
+    display: none;
 }
 
 .notice li a{
@@ -157,8 +165,18 @@ body{
 .notice li a{}
 
 .gallery{
-    display: flex;
-    display: none;
+    gap: 10px;
+    height: 130px;
+    /* display: none; */
+}
+
+.gallery li{
+    height: 100%;
+}
+
+.gallery img{
+    width: 100%;
+    height: 100%;
 }
 
 .banner{
@@ -239,4 +257,8 @@ body{
     right: 20px;
     background-color: #ddd;
     padding: 10px;
+}
+
+#modal.active{
+    
 }
