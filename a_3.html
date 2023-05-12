@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JUST 쇼핑몰</title>
+    <link rel="stylesheet" href="css/a_3.css">
+    <script src="./script/jquery-1.12.4.js"></script>
+    <script src="./script/a_3.js"></script>
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <div class="logo"><img src="./images/logo.png" alt=""></div>
+
+            <ul class="gnb">
+                <li>
+                    <a href="#">탑</a>
+                    <ul>
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">블라우스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">아우터</a>
+                    <ul>
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">블라우스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">바지</a>
+                    <ul>
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">블라우스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">악세서리</a>
+                    <ul>
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">블라우스</a></li>
+                        <li><a href="#">블라우스</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="slider">
+            <div class="slide">
+                <div><img src="./images/slide1.jpg" alt="슬라이드1"></div>
+                <div><img src="./images/slide2.jpg" alt="슬라이드2"></div>
+                <div><img src="./images/slide3.jpg" alt="슬라이드3"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        //메뉴
+        $('.gnb > li').hover(
+            function(){
+            //    $(this).find('ul').stop().fadeIn()
+            //    $(this).find('ul').stop().show()
+               $(this).find('ul').stop().slideDown()
+
+            },
+            function(){
+                // $(this).find('ul').stop().show()
+                // $(this).find('ul').stop().fadeOut()
+                $(this).find('ul').stop().slideUp()
+            },
+        )
+
+        //슬라이드
+        // setInterval(function(){
+        //     $('.slide').animate({top: -300}, function(){
+        //         $('.slide div:first').appendTo('.slide')
+        //         $('.slide').css('top',0)
+        //     })
+        // }, 3000)
+        
+        // setInterval(function(){
+        //     $('.slide').animate({left: -1200}, function(){
+        //         $('.slide div:first').appendTo('.slide')
+        //         $('.slide').css('left',0)
+        //     })
+        // }, 3000)
+
+
+    </script>
+</body>
+</html>
